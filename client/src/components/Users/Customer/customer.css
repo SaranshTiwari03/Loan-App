@@ -1,0 +1,277 @@
+/* Customer Dashboard */
+.customer-dashboard {
+  width: 100%;
+  padding-top: 100px;
+  text-align: center;
+  padding: 20px; /* This line seems redundant with the previous padding declaration */
+  padding-top: 70px; /* Overriding the previous padding-top declaration */
+}
+
+.dashboard-heading {
+  font-size: 1.8rem;
+  margin: 40px 0px;
+}
+
+/* Customer Button Container */
+.cust-btn-cntnr .dashboard-button {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.cust-btn-cntnr .dashboard-button:hover {
+  background-color: #007bffb9;
+}
+
+/* Terms and Conditions */
+.terms-and-conditions {
+  margin-top: 60px;
+}
+
+.terms-heading {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.terms-text {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #a2a2a2;
+}
+
+/* Loan Request */
+.loan-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.loan-container .loan-form,
+.loan-container .payments-container {
+  border: 1px solid #484848;
+  padding: 20px;
+  color: black;
+  background-color: #cad8dbe2;
+  border-radius: 10px;
+  margin: 40px;
+  text-align: center;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.loan-container .loan-form h2,
+.loan-container .payments-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.loan-container .loan-form label,
+.loan-container .payments-container label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.loan-container .loan-form input,
+.loan-container .payments-container input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.loan-container .loan-form button,
+.loan-container .payments-container button {
+  background-color: #ff0d21;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loan-container .loan-form button:hover,
+.loan-container .payments-container button:hover {
+  background-color: #a40613;
+}
+
+.loan-container .loan-form .installments-list ul,
+.loan-container .payments-container .installments-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.loan-container .loan-form .installments-list ul li,
+.loan-container .payments-container .installments-list ul li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.loan-container .loan-form p,
+.loan-container .payments-container p {
+  color: #333;
+}
+
+.loan-container .loan-form .apply-btn,
+.loan-container .payments-container .apply-btn {
+  cursor: pointer;
+  margin: 12px;
+  background-color: #1e9fe9;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.loan-container .loan-form .apply-btn:hover,
+.loan-container .payments-container .apply-btn:hover {
+  background-color: #1845c2;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 750px) {
+  .loan-container {
+    flex-direction: column;
+  }
+}
+
+/* View Loans */
+.userTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.view-loan-container {
+  width: 80%;
+  align-items: center;
+}
+
+.view-loan-heading {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Pay Loans */
+.payloan {
+  padding-top: 70px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.payloan h1 {
+  font-size: 30px;
+}
+
+/* Payment Model */
+.repayment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  color: black;
+}
+
+.repayment-modal .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.repayment-modal .modal-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: #fff;
+  padding: 8px;
+  width: 60%;
+  max-width: 400px;
+  border-radius: 8px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.repayment-modal .modal-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.repayment-modal .modal-container label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.repayment-modal .modal-container input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: 90%;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.repayment-modal .modal-container input:focus {
+  border-color: #36b3eb;
+}
+
+.repayment-modal .modal-container button {
+  background: #36b3eb;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  width: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.repayment-modal .modal-container button:hover {
+  background: #0a70a0e6;
+}
+
+.repayment-modal .modal-container .cancel {
+  background: transparent;
+  color: #040404;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.repayment-modal .modal-container .cancel:hover {
+  color: #8b8989;
+}

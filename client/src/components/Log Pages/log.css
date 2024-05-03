@@ -1,0 +1,319 @@
+/* .log-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 70px;
+  color: black;
+ 
+}
+
+.log-container .log-heading {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.log-container .log-form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.log-container .log-form .log-type {
+  font-size: 20px;
+  margin: 10px 0px;
+  margin-bottom: 15px;
+}
+
+.log-container .log-form label {
+  margin: 10px 0px;
+  font-size: 1.2em;
+}
+
+.log-container .log-form input {
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #36B3EB;
+  border-radius: 10px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.916);
+}
+.log-container .log-form input::placeholder{
+  color: black;
+}
+
+.log-container .log-form button {
+  padding: 10px;
+  background-color: #36B3EB;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px 40px;
+}
+
+.log-container .log-form button:hover {
+  background-color: #0056b3;
+}
+
+.log-container .log-form h5 {
+  margin: 10px 0px;
+}
+
+.log-container .log-form .btn {
+  background-color: rgba(5, 206, 5, 0.872);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.log-container .log-form .btn:hover {
+  background-color: rgba(5, 206, 5, 0.624);
+}
+
+.log-container .log-form h4 {
+  font-size: 20px;
+}
+
+.log-container .log-form a button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.log-container .log-form a button:hover {
+  background-color: #218838;
+} */
+
+
+/* new login page */
+
+.login{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../public/Images/bg-gradient.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);         
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  ::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .form button {
+    align-self: flex-end;
+  }
+  
+  .flex-column > label {
+    color: #151717;
+    font-weight: 600;
+  }
+  
+  .inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 100%;
+    border:1px solid transparent;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+  }
+  
+  .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .flex-row > div > label {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #2d79f3;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button-submit {
+    margin: 20px 0 10px 0;
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .button-submit:hover {
+    background-color: #252727;
+  }
+  
+  .p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #ededef;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    border: 1px solid #2d79f3;
+    
+  }
+
+  .btn i{
+    font-size: 22px;
+  }
+
+  .title_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #212121;
+  }
+  
+  .subtitle {
+    font-size: 0.725rem;
+    max-width: 80%;
+    text-align: center;
+    line-height: 1.1rem;
+    color: #8B8E98
+  }
+
+  .register{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("../../../public/Images/bg-gradient.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);         
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+  .flex-column1{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    gap: 10px;
+    padding:5px;
+  }
+
+  .input1 {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .input1:focus {
+    outline: none;
+  }
+  
+  .inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+  }
+
+  .inputForm3{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-column1 > label {
+    color: #151717;
+    font-weight: 600;
+  }
+
+  .labelgender{
+    color: #151717;
+    font-weight: 600;
+  }

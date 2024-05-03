@@ -1,0 +1,66 @@
+:root {
+  --primaryColor: #007bff;
+  --tableBackgroundColor: #ffffff;
+  --cellPadding: 10px;
+}
+
+.App {
+}
+
+.table-cntnr {
+  overflow-x: auto;
+  margin: var(--cellPadding);
+}
+
+.table-cntnr table {
+  text-align: center;
+  align-items: center;
+  width: 90%;
+  display: table;
+  margin: 0 auto;
+  vertical-align: center;
+  border-collapse: collapse;
+  background: var(--tableBackgroundColor);
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+}
+
+.table-cntnr table th {
+  border: 2px solid #363636;
+  color: #e2b842;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: #797979;
+}
+
+.table-cntnr table td {
+  border: 2px solid #343434a8;
+  padding: var(--cellPadding);
+  text-align: center;
+  align-items: center;
+  color: #343434;
+  font-weight: 500;
+  padding: 0.65em 1em;
+}
+
+.table-cntnr table tbody tr {
+  transition: var(--primaryColor) 0.25s ease;
+}
+
+.table-cntnr table tbody tr:hover {
+  background: #cfedf8;
+}
+
+.table-cntnr table button {
+  padding: 4px 6px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .table-cntnr {
+    overflow-x: scroll;
+    margin: 3px;
+  }
+}
