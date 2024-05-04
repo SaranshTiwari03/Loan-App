@@ -13,20 +13,12 @@ const CustHome = () => {
       <div className="cust-btn-cntnr" >
 
         <Link to="/cust/reqloan">
-          <button className="dashboard-button">Apply for New Loan</button>
+          <button className="dashboard-button"><div className='image-loan'></div><h4>Apply for New Loan</h4></button>
         </Link>
 
         <Link to="/cust/viewloan">
-          <button className="dashboard-button">View All Loans</button>
+          <button className="dashboard-button"><div className='image-loan1' ></div><h4>View All Loans</h4></button>
         </Link>
-      </div>
-
-      <div className="terms-and-conditions">
-        <h3 className="terms-heading" >Terms and Conditions</h3>
-        <p className="terms-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod metus a libero
-          venenatis ultricies. Phasellus ut nulla vitae turpis ultrices accumsan.
-        </p>
       </div>
    
     </div>

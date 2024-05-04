@@ -9,7 +9,7 @@ import GlobalContext from '../../Context/GlobalContext';
 const Navbar = () => {
 
     var logIned=localStorage.getItem("token");
-    const {isLoggedIn, setIsLoggedIn,userType,setUserType} = useContext(GlobalContext);
+    const {setIsLoggedIn,userType,setUserType} = useContext(GlobalContext);
     const [reload,setReload]=useState(0);
    
     const [menuOpen, setMenuOpen] = useState(false);
@@ -55,10 +55,10 @@ const Navbar = () => {
 
                         {!(logIned) &&
                             <>
-                                <Link to='/login' onClick={() => { setUserType(false); setMenuOpen(false); }}>
+                                <Link to='/signup' onClick={() => { setUserType(false); setMenuOpen(false); }}>
                                     <button>Customer Login</button>
                                 </Link>
-                                <Link to='/login' onClick={() => { setUserType(true); setMenuOpen(false); }}>
+                                <Link to='/signup' onClick={() => { setUserType(true); setMenuOpen(false); }}>
                                     <button>Admin Login</button>
                                 </Link>
                             </>

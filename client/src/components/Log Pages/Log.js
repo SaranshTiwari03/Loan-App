@@ -10,7 +10,7 @@ import GlobalContext from '../../Context/GlobalContext';
 function Login() {
   
     const [reload,setReload]= useState(0);
-    const {setIsLoggedIn,userType,logInApi} = useContext(GlobalContext);
+    const {setIsLoggedIn,setUserType,userType,logInApi} = useContext(GlobalContext);
 
     const navigate = useNavigate();
   
@@ -26,6 +26,7 @@ function Login() {
     async function loginHandler() {
       try {
         setIsLoading(true);
+        {userType?setUserType(true):setUserType(false)}
   
         const response = await fetch(`${logInApi}`, {
           method: 'POST',
@@ -60,8 +61,8 @@ function Login() {
     }
 
     useEffect(()=>{
-
-    },[reload])
+        
+    })
   
     function changeHandler(event) {
       const { name, value } = event.target;

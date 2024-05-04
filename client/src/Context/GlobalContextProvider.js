@@ -13,6 +13,7 @@ const GlobalContextProvider = ({ children }) => {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userType, setUserType] = useState(false);
+  const [adminType,setAdminType]=useState(false);
 
   const PORT = 8000
 
@@ -20,10 +21,8 @@ const GlobalContextProvider = ({ children }) => {
 
   const logInApi = `${PORT_Url}/user/signin`;
   const signUpApi = `${PORT_Url}/user/signup`;
-
   const allLoansApi = `${PORT_Url}/loan/allLoans`;
   const updateLoansApi = `${PORT_Url}/loan/update`;
-
   const createLoanApi = `${PORT_Url}/loan/createLoan`;
   const viewPaymentApi = `${PORT_Url}/loan/payments/`;
   const payLoanApi = `${PORT_Url}/loan/doPayment`;
@@ -36,6 +35,8 @@ const GlobalContextProvider = ({ children }) => {
         setIsLoggedIn,
         userType,
         setUserType,
+        adminType,
+        setAdminType,
         logInApi,
         signUpApi,
         allLoansApi,
