@@ -8,24 +8,24 @@ Both should be installed and make sure mongodb is running.
 
 Now install the dependencies
 # on cmd promt/powershell 
-cd backend
+cd server
 npm install
 
-cd frontend
+cd client
 npm install
 
 We are almost done, Now just start the development server.
 
 For Frontend.
 # on cmd promt/powershell 
-cd frontend
+cd client
 npm start
 
 For Backend.
 
 Open another terminal in folder, Also make sure mongodb is running in background.
 # on cmd promt/powershell 
-cd backend
+cd server
 nodemon index.js
 or
 npx nodemon index.js
