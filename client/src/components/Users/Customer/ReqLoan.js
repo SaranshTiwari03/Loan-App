@@ -127,24 +127,12 @@ const ReqLoan = () => {
     <div className="loan-container">
 
       <div className="loan-form">
-
+      
         <label htmlFor="loanAmount">Loan Amount</label>
-        <input
-          type="number"
-          id="loanAmount"
-          value={loanAmount}
-          onChange={(e) => setLoanAmount(e.target.value)}
-          required
-        />
+        <input  type="number" id="loanAmount" value={loanAmount} onChange={(e) => setLoanAmount(e.target.value)}  required />
 
         <label htmlFor="term">Term/Installments (in weeks)</label>
-        <input
-          type="number"
-          id="term"
-          value={term}
-          onChange={(e) => setTerm(e.target.value)}
-          required
-        />
+        <input type="number" id="term" value={term} onChange={(e) => setTerm(e.target.value)}  required />
 
         <div className='btn-cntrn'>
           <button onClick={calculateInstallments}>View Installments</button>

@@ -117,7 +117,7 @@ function Register() {
                             </div>
                         )}
 
-                        <p className="p">Already have an account?<Link to='/login'><span className="span">Log In as {userType ? 'Admin' : 'Customer'}</span></Link></p>
+                        <Link to='/login'><p className="p">Already have an account?<span className="span">Log In as {userType ? 'Admin' : 'Customer'}</span></p></Link>
                         <p className="p line">Or With</p>
                         <div className="flex-row">
                             <button className="btn google"><img src="./Images/google.png" width="18px" alt="" />Google</button>

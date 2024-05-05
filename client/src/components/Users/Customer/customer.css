@@ -1,6 +1,5 @@
 /* Customer Dashboard */
 .customer-dashboard {
-  
   width: 100%;
   padding-top: 100px;
   text-align: center;
@@ -55,7 +54,7 @@
   background-image: url("../../../Assets/viewloan.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  
+ 
 }
 
 
@@ -67,19 +66,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 100px;
 }
 
 .loan-container .loan-form,
 .loan-container .payments-container {
-  border: 1px solid #484848;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   padding: 20px;
-  color: black;
-  background-color: #cad8dbe2;
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
   border-radius: 10px;
-  margin: 40px;
-  text-align: center;
-  
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 30%;
 }
 
 .loan-container .loan-form h2,
@@ -97,6 +97,7 @@
   color: #333;
 }
 
+
 .loan-container .loan-form input,
 .loan-container .payments-container input {
   border: 1px solid #ccc;
@@ -110,7 +111,7 @@
 
 .loan-container .loan-form button,
 .loan-container .payments-container button {
-  background-color: #ff0d21;
+  background-color: #2ad100c1;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -121,7 +122,7 @@
 
 .loan-container .loan-form button:hover,
 .loan-container .payments-container button:hover {
-  background-color: #a40613;
+  background-color: rgb(53, 207, 6);
 }
 
 .loan-container .loan-form .installments-list ul,
@@ -129,6 +130,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .loan-container .loan-form .installments-list ul li,
@@ -171,6 +174,27 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
+  }
+  .loan-container .loan-form,
+  .loan-container .payments-container {
+    width: 60%;
+  }
+
+  .image-loan1{
+    width:200px;
+    height: 200px;
+    background-image: url("../../../Assets/payloan2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .image-loan{
+    width:200px;
+    height: 200px;
+    background-image: url("../../../Assets/viewloan.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
   }
 }
 

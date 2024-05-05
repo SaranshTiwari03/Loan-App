@@ -56,10 +56,10 @@ const Navbar = () => {
                         {!(logIned) &&
                             <>
                                 <Link to='/signup' onClick={() => { setUserType(false); setMenuOpen(false); }}>
-                                    <button>Customer Login</button>
+                                    <button>Customer SignUp</button>
                                 </Link>
                                 <Link to='/signup' onClick={() => { setUserType(true); setMenuOpen(false); }}>
-                                    <button>Admin Login</button>
+                                    <button>Admin SignUp</button>
                                 </Link>
                             </>
                         }

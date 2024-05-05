@@ -1,100 +1,3 @@
-/* .log-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  padding-top: 70px;
-  color: black;
- 
-}
-
-.log-container .log-heading {
-  text-align: center;
-  font-size: 30px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  margin: 10px;
-}
-
-.log-container .log-form {
-  display: flex;
-  flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  padding: 20px 30px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-.log-container .log-form .log-type {
-  font-size: 20px;
-  margin: 10px 0px;
-  margin-bottom: 15px;
-}
-
-.log-container .log-form label {
-  margin: 10px 0px;
-  font-size: 1.2em;
-}
-
-.log-container .log-form input {
-  margin-bottom: 15px;
-  padding: 8px;
-  font-size: 1em;
-  border: 1px solid #36B3EB;
-  border-radius: 10px;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.916);
-}
-.log-container .log-form input::placeholder{
-  color: black;
-}
-
-.log-container .log-form button {
-  padding: 10px;
-  background-color: #36B3EB;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 20px 40px;
-}
-
-.log-container .log-form button:hover {
-  background-color: #0056b3;
-}
-
-.log-container .log-form h5 {
-  margin: 10px 0px;
-}
-
-.log-container .log-form .btn {
-  background-color: rgba(5, 206, 5, 0.872);
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-
-.log-container .log-form .btn:hover {
-  background-color: rgba(5, 206, 5, 0.624);
-}
-
-.log-container .log-form h4 {
-  font-size: 20px;
-}
-
-.log-container .log-form a button {
-  padding: 10px;
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.log-container .log-form a button:hover {
-  background-color: #218838;
-} */
-
-
-/* new login page */
 
 .login{
   height: 100vh;
@@ -200,8 +103,11 @@
   .p {
     text-align: center;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
     margin: 5px 0;
+  }
+  .p span{
+    font-size: 18px;
   }
   
   .btn {

@@ -39,10 +39,7 @@ const ViewLoan = () => {
    
       const receivedLoans = data.loans || [];
       setLoans(receivedLoans);
-      console.log(receivedLoans);
-
       setError(null); 
-
       setLoading(false);
     } catch (error) {
       console.error('Error fetching customer loans:', error);
